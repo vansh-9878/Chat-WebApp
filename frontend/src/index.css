@@ -1,0 +1,118 @@
+* {
+  outline: 0;
+  margin: 0;
+}
+
+body {
+  /* background-color: rgb(207, 201, 201); */
+  background-image: radial-gradient(
+    circle 588px at 31.7% 40.2%,
+    rgba(225, 200, 239, 1) 21.4%,
+    rgba(163, 225, 233, 1) 57.1%
+  );
+}
+
+.main {
+  width: 100%;
+  /* height: 266px; */
+  background-color: white;
+  margin-top: 10px;
+}
+
+.main2 {
+  height: 490px;
+}
+
+.login {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+.partition {
+  display: flex;
+}
+
+form {
+  font-size: 18px;
+  width: 90%;
+}
+
+.design {
+  margin: 5px 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  width: 100%;
+  height: 430px;
+  background-image: url(C:\Users\vansh.arora\Vansh\Chat-app\frontend\src\public\images\LoginSignup.png);
+  background-size: cover;
+}
+
+.name {
+  position: fixed;
+  background-color: white;
+  width: 75%;
+}
+
+.messageInput {
+  position: fixed;
+}
+
+/* ::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #121212;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #242424;
+} */
+
+.messages {
+  width: 100%;
+  height: 452px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages2 {
+  flex-direction: column-reverse;
+}
+
+.sidebar {
+  height: 261px;
+}
+
+.submit {
+  position: absolute;
+  right: 8%;
+  bottom: 11.8%;
+}
+
+.chatBG {
+  width: 100%;
+  height: 392px;
+  background-image: url(C:\Users\vansh.arora\Vansh\Chat-app\frontend\src\public\images\bgimage.jpg);
+  background-size: contain;
+}
+
+.welcome {
+  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+}
