@@ -8,16 +8,16 @@ const Logout = () => {
     logout();
   };
   return (
-    <div
-      className="mt-5 fs-5 d-flex logout"
-      style={{ cursor: "pointer", width: "220px" }}
+    <button
+      className="btn btn-secondary fs-5 d-flex "
+      style={{ marginTop: "47px", marginLeft: "30px" }}
       onClick={handleLogout}
     >
       <div>Logout</div>
       <div className="ms-2">
         <FiLogOut />
       </div>
-    </div>
+    </button>
   );
 };
 
