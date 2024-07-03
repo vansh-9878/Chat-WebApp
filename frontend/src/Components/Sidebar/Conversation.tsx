@@ -14,18 +14,18 @@ const Conversation = ({ conversation }: Props) => {
   return (
     <>
       <div
-        className={`d-flex ${isSelected ? "bg-dark-subtle" : ""}`}
-        style={{ cursor: "pointer" }}
+        className={`d-flex ps-2 pt-2 ${isSelected ? "bg-dark-subtle" : ""}`}
+        style={{ cursor: "pointer", height: "52px" }}
         onClick={handleClick}
       >
-        <div className="profile rounded-circle mt-2">
+        <div className="profile rounded-circle mt-1 ">
           <img
             className="avatar"
             src={conversation.profilePic}
             style={{ height: "30px", width: "30px" }}
           />
         </div>
-        <div className="mt-2 ms-2">
+        <div className="mt-1 ms-2 fs-5">
           <p>{conversation.fullname}</p>
         </div>
       </div>
