@@ -4,15 +4,20 @@ import SearchInput from "./SearchInput";
 
 const Sidebar = () => {
   return (
-    <div className="ms-2">
-      <SearchInput />
-      <div
-        className="w-100 bg-secondary-subtle "
-        style={{ height: "1.4px" }}
-      ></div>
-      <ConversationList />
-      <Logout />
-    </div>
+    <>
+      <div className="ms-2">
+        <p
+          className="fs-3 text-start pt-2"
+          style={{ height: "44px", color: "#124721" }}
+        >
+          QuackQuack
+        </p>
+        <hr />
+        <SearchInput />
+        <ConversationList />
+        <Logout />
+      </div>
+    </>
   );
 };
 
