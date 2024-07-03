@@ -5,22 +5,23 @@
 
 body {
   /* background-color: rgb(207, 201, 201); */
-  background-image: radial-gradient(
-    circle 588px at 31.7% 40.2%,
-    rgba(225, 200, 239, 1) 21.4%,
-    rgba(163, 225, 233, 1) 57.1%
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 131, 97, 1) 11.2%,
+    rgba(28, 103, 88, 1) 91.1%
   );
 }
 
 .main {
   width: 100%;
   /* height: 266px; */
-  background-color: white;
+  background-color: #b1e7f2;
   margin-top: 10px;
 }
 
 .main2 {
   height: 490px;
+  border-radius: 20px 0 0 20px;
 }
 
 .login {
@@ -96,6 +97,8 @@ form {
 
 .sidebar {
   height: 261px;
+  border-radius: 20px;
+  background-color: white;
 }
 
 .submit {
@@ -105,10 +108,12 @@ form {
 }
 
 .chatBG {
-  width: 100%;
-  height: 392px;
+  width: 99%;
+  height: 381px;
   background-image: url(C:\Users\vansh.arora\Vansh\Chat-app\frontend\src\public\images\bgimage.jpg);
   background-size: contain;
+  border-radius: 20px;
+  margin: 5px 5px 2px 5px;
 }
 
 .welcome {
