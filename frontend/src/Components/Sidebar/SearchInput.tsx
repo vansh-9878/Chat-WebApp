@@ -21,19 +21,26 @@ const SearchInput = () => {
     setSearch("");
   };
   return (
-    <form onSubmit={handleSubmit} className="d-flex items-center mb-3 mt-2">
-      <input
-        type="text"
-        className="form-control"
-        id="search"
-        placeholder="Search..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <button className="btn btn-secondary ms-2 rounded-circle pb-2">
-        <IoSearchSharp />
-      </button>
-    </form>
+    <>
+      <p className="fs-3 text-start pt-1" style={{ height: "44px" }}>
+        QuackQuack
+      </p>
+      <hr />
+      <form onSubmit={handleSubmit} className="d-flex items-center mb-3 mt-2">
+        <input
+          type="text"
+          className="form-control"
+          id="search"
+          placeholder="Search..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          style={{ width: "150px" }}
+        />
+        <button className="btn btn-secondary ms-2 rounded-circle pb-2">
+          <IoSearchSharp />
+        </button>
+      </form>
+    </>
   );
 };
 
