@@ -22,10 +22,6 @@ const SearchInput = () => {
   };
   return (
     <>
-      <p className="fs-3 text-start pt-1" style={{ height: "44px" }}>
-        QuackQuack
-      </p>
-      <hr />
       <form onSubmit={handleSubmit} className="d-flex items-center mb-3 mt-2">
         <input
           type="text"
