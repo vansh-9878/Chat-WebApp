@@ -24,7 +24,16 @@ const MessageContainer = () => {
         <NoChat />
       ) : (
         <div className="message-container w-100 ">
-          <div className="bg-light">
+          <div
+            className=""
+            style={{
+              backgroundColor: "white",
+              borderRadius: "20px",
+              width: "99%",
+              margin: "4px",
+              paddingLeft: "10px",
+            }}
+          >
             <div className="fs-4 ms-2">
               <span className="">{selectedConvo.fullname}</span>
             </div>
