@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const auth = require("./Routes/authRouter");
@@ -11,13 +12,20 @@ const { app, server } = require("./socket/socket");
 
 const PORT = process.env.PORT || 5000;
 
+const __dirname = path.resolve();
+
 app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api/auth", auth);
-app.use("/api/messages", messageRouter);
+app.use("/api/messages", authorization, messageRouter);
 app.use("/api/userList", authorization, userRouter);
+
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+});
 
 const start = () => {
   try {
