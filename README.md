@@ -71,9 +71,9 @@ Make sure you have the following installed:
 
 ## Usage
 
-1. **Sign Up**: Create a new account using your email and a secure password.
+1. **Sign Up**: Create a new account using your unique username and a secure password.
 2. **Log In**: Access your account by logging in.
-3. **Choose a person**: Select the person you wanna talk to.
+3. **Choose a person**: Select the person you want to talk to.
 
 
 ## Contributing
